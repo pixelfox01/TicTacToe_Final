@@ -4,9 +4,12 @@ from board import Board
 
 def main():
     board = Board()
-    game = Game(board)
+    print("Welcome to Tic Tac Toe!")
+    player_name = input("Enter your name: ")
+    game = Game(board, player_name)
+    game.start()
 
-    game.board.print_board()
+    print("Game over!")
 
 
 if __name__ == "__main__":
